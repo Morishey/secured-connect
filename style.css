@@ -1,0 +1,379 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    cursor: default;
+    overflow-x: hidden;
+    margin: 0;
+    background: linear-gradient(to right, #fea19117, rgba(195, 219, 236, 0.521), rgba(235, 253, 235, 0.311));
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.purple {
+    width: 60px;
+    /* border: 2px solid red; */
+
+}
+
+
+.purple img {
+    vertical-align: middle;
+    border: 2px solid blue;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+
+}
+
+
+.log-container {
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    vertical-align: middle;
+    margin-top: 50px;
+}
+
+
+
+
+.login {
+    text-align: center;
+    margin-top: 70px;
+    /* border: 1px solid red; */
+
+}
+
+.login-btn2 {
+    text-align: center;
+    margin-top: 15px;
+    /* border: 1px solid red; */
+
+}
+
+.login button {
+    padding: 13px;
+    width: 350px;
+    font-size: 17px;
+    border: none;
+    border-radius: 50px;
+    background-color: #327ef8;
+    color: white;
+}
+
+.login-btn2 button {
+    padding: 12px;
+    width: 350px;
+    font-size: 17px;
+    border: none;
+    border-radius: 50px;
+    background-color: #327ef8;
+    color: white;
+}
+
+
+
+.footer2 p {   
+    margin-top: 20px;
+    
+}
+
+
+.footer2 .fp {
+    text-align: center;
+    color: grey;
+    word-spacing: 20px;
+    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 12px;
+
+}
+
+
+.footer2 {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* font-weight: bold; */
+
+}
+
+
+.footer2 img {
+    text-align: center;
+    margin-bottom: -20px;
+    width: 18px;
+
+}
+
+/* .loading-bar-container {
+    width: 60%;
+    height: 10px;
+    background-color: silver;
+    border-radius: 50px;
+    margin-top: 10px;
+    display: none;
+    justify-content: center;
+    display: none;
+} */
+
+/* .loading-bar-container2 {
+    width: 100%;
+    height: 10px;
+    background-color: silver;
+    border-radius: 50px;
+    margin-top: 10px;
+    /* display: none; */
+/* justify-content: center;
+    align-items: center;
+    display: block;
+} */
+
+
+/* .loading-bar2 {
+    width: 0;
+    border-radius: 50px;
+    height: 100%;
+    background-color: #0866FF;
+    position: abosolute;
+    left: 0;
+} */
+
+/* FORM */
+.form-container {
+    /* border: 1px solid red; */
+    margin-top: 60px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+
+#identifier {
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid silver;
+    /* outline: none; */
+    padding-left: 20px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4a4a;
+
+}
+
+#password {
+    margin-top: 15px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid silver;
+    /* outline: none; */
+    padding-left: 20px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4a4a;
+
+
+}
+
+.form-group input:focus {
+    /* border-color: initial; */
+    outline: none;
+    box-shadow: none;
+
+}
+
+input:focus {
+    border-color: #888;
+}
+
+.form-group input::placeholder {
+    transition: all 0.4s;
+    color: #888;
+    font-size: larger;
+    padding-left: 0;
+    font-weight: light;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+}
+
+
+.form-group input:focus::placeholder,
+.form-group input:not(:placeholder-shown)::placeholder {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #888;
+    font-size: 16px;
+}
+
+.create-new button {
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    padding: 9px;
+    width: 350px;
+    font-size: 16px;
+    font-weight: 5px;
+    border: 1.5px solid #327ef8;
+    border-radius: 15px;
+    color: #327ef8;
+
+}
+
+#confirmationMessage {
+    display: none;
+    font-size: large;
+    color: #327ef8 ;
+    border: 1.5px solid #327ef8 ;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#loadingBarContainer {
+    display: none;
+    width: 200px;
+    border-radius: 50px;
+    background-color: #FDAA10;
+    margin-top: 10px;
+}
+
+#loadingBar {
+
+    width: 0%;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #CE3769;
+}
+
+.create-new {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    width: 350px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    /* background-color: #0866FF; */
+    color: #327ef8;
+
+}
+
+.password-group {
+    position: relative;
+
+
+}
+
+#fp {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    /* CSS rules for screens up to 768px wide (typical width for mobile devices) */
+    .container {
+        width: 90%;
+
+    }
+
+    .form-group input::placeholder {
+        /* color: #888; */
+        font-size: 18px;
+        /* padding-left: 20px; */
+    }
+
+    .create-new {
+        width: 100%;
+    }
+
+    /* .loading-bar-container2 {
+        width: 100%;
+        height: 10px;
+        background-color: silver;
+        border-radius: 50px;
+        margin-top: 10px;
+        display: none;
+        justify-content: center;
+        /* display: block; */
+    /* align-items: center; */
+    /* } */
+
+    /* .loading-bar2 {
+        width: 0;
+        border-radius: 50px;
+        height: 100%;
+        background-color: #0866FF;
+        position: abosolute;
+        left: 0;
+    } */
+
+
+
+
+    .password-group {
+        position: relative;
+
+    }
+
+    .passsword-group.focused .toggle-password {
+        display: block;
+
+    }
+
+    .form-group input:focus {
+        border-color: #4a4a4a;
+        border: 1px solid #8888883a;
+        /* background-color: #0866FF; */
+    }
+
+
+
+
+}
